@@ -1,11 +1,9 @@
-beerbottles = 0
+while true
+	puts "How many bottle of beer on the wall?"
+	beerbottles = gets.chomp
+	puts beerbottles + " of beer on the wall, " + beerbottles + " . Take one down, pass it around " + beerbottles.to_i.pred.to_s + " bottles of beer on the wall."
 
-while beerbottles < 100
-
-	beerbottles.to_s + " bottles of beer on the wall, " + beerbottles.to_s + " bottles of beer, take one down, pass it around " + beerbottles.to_s + " of beer on the wall"
-	beerbottles.next
-
-if beerbottles == 100
-	break
-end
+	if beerbottles == 0
+		break
+	end
 end
